@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f9f9f9;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* BOX Style */
+
+.box {
+    background-color: #f6f4f4;
+    margin-top: 20px;
+}
+
+.box-header {
+    background-color: #db4d3f;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.box-content > ul {
+    padding: 10px 0 0 50px;
+}
+
+.box-content > ol {
+    padding-left: 20px;
+}
+
+.box-between-1, .box-between-2 {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.box-between-2 :first-child input{
+    width: 50px;
+}
+
+.box-between-2 :nth-child(2) input{
+    width: 50px;
+}
+
+/* Buttons Style */
+button {
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #db4d3f;
+    border-radius: 2px;
+    color: #db4d3f;
+}
+
+.submit-box {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cancel-button {
+    flex-basis: 50%;
+}
+
+.submit-button {
+    flex-basis: 50%;
+    background-color: #db4d3f;
+    color: #fff;
+}
+/* Form Style */
+
+form {
+    width: 100%;
+}
+
+input, textarea {
+    padding: 6px;
+    border: none;
+}
+
+input[type=number] { 
+    width: 30px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+    opacity: 1;
+}
+
+
+/* Lists Style */
+.arrow-list li{ 
+    list-style: none; 
+}
+
+.arrow-list li::before{ 
+    content: "\00BB"; 
+    color: #db4d3f;
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+ol li {
+    padding: 6px;
+}
